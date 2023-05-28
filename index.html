@@ -1,0 +1,53 @@
+<?php
+
+    $con = 
+
+?>
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum o psach</title>
+    <link rel="stylesheet" href="./styl.css"/>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Forum miłościnków psów</h1>
+        </header>
+        <div class="box">
+            <nav>
+                <img src="./avatar.png" alt="Użytkownik forum">
+                <!-- skrpt1 -->
+                <h4 name="nick"></h4>
+                <p name="lp"></p>
+                <p name="pytanie"></p>
+                <video src="./video.mp4" controls autoplay loop></video>
+            </nav>
+            <main>
+                <!-- skrypt2 -->
+                <form action="./skrypt.php" method="post">
+                    <textarea name="tekst" cols="40" rows="4"></textarea><br>
+                    <button>Dodaj odpowiedź</button>
+                </form>
+                <h2>Odpowiedzi na pytanie</h2>
+                <!-- skrypt3 -->
+                <ol>
+                    <li name="nickodp"></li>
+                    <hr>
+                    <li name="lpodp"></li>
+                    <hr>
+                    <li name="pytanieodp"></li>
+                    <hr>
+                </ol>
+            </main>
+        </div>
+        <small>
+            <span>Autor: <i>000000</i>,</span><a href="./http://mojestrony.pl/" target="_blank">Zobacz nasze realizacje</a>
+        </small>
+    </div>
+</body>
+</html>
